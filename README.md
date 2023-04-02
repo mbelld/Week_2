@@ -23,10 +23,10 @@ As part of best practices, we are adding new features and ehnahcements to the lo
 
 Be sure to install required libraries
 
-'''python
+```python
     install fire
     intall questionary
-'''
+```
 
 ---
 
@@ -34,7 +34,7 @@ Be sure to install required libraries
 
 Use the new save functionality to save a list of qualifying loans:
 
-'''python
+```python
     def save_qualifying_loans(qualifying_loans):
           wanna_save = questionary.text("Save the qualifying loans as a .csv (Y/N)?").ask()
           wanna_save = str(wanna_save)
@@ -46,7 +46,8 @@ Use the new save functionality to save a list of qualifying loans:
                  csvwriter = csv.writer(csvfile)
                   for row in qualifying_loans:
                      csvwriter.writerow(row)
-'''
+```
+
 
 
 
