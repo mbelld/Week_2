@@ -22,23 +22,44 @@ Be sure to install required libraries
     install fire
     intall questionary'''
 
-
-
-
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Use the new save functionality to save a list of qualifying loans:
+
+'''python
+def save_qualifying_loans(qualifying_loans):
+    """Saves the qualifying loans to a CSV file.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+    # @TODO: Complete the usability dialog for savings the CSV Files.
+    # YOUR CODE HERE!
+    """asks if you want to save"""
+    wanna_save = questionary.text("Save the qualifying loans as a .csv (Y/N)?").ask()
+    wanna_save = str(wanna_save)
+    if wanna_save == "Y":
+        import csv
+        save_results = questionary.text("Enter file path to save as .csv").ask()
+        save_results = Path(save_results)
+        with open(save_results, 'w', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            for row in qualifying_loans:
+                csvwriter.writerow(row)
+'''
+
+
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+MBellD
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+N/A
