@@ -1,0 +1,50 @@
+  519  python app.py
+  520  python app.py
+  521  python app.py
+  522  python app.py
+  523  python app.py
+  524  python app.py
+  525  python app.py
+  526  python app.py
+  527  python app.py
+  528  python app.py
+  529  git status
+  530  git add app.py
+  531  git status
+  532  git commit -m "added save code for qualifying loans"
+  533  git status
+  534  python app.py
+  535  python app.py
+  536  git status
+  537  git add app.py
+  538  git commit -m "added questionary line to save qualifying loans"
+  539  git status
+  540  pwd
+  541  ls
+  542  cd ..
+  543  ls
+  544  git status
+  545  git add README.md
+  546  git commit -m "updating README.md"
+  547  git status
+  548  git add README.md
+  549  git commit -m "draft text for README.md"
+  550  git status
+  551  git status
+  552  git push
+  553  git status
+  554  git add README.md
+  555  git commit -m "amended README.md"
+  556  git status
+  557  ls
+  558  cd loan_qualifier_app/
+  559  ls
+  560  python app.py
+  561  git push
+  562  cd ..
+  563  ls
+  564  git add README.md
+  565  git commit -m "amended README.md style"
+  566  git push
+  567  pwd
+  568  history 50 > terminal_history.txt
